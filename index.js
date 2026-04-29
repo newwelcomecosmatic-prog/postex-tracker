@@ -3,7 +3,7 @@ const cors = require("cors");
 const fetch = require("node-fetch");
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 const POSTEX_TOKEN = "NzFhNTQ0MDczZDBmNGY3Zjk3NjBmMTg4NGFiNzlhZTM6NWMwYWNkYjk3MDk4NDI2NGIyOWQ5ZDIxMTI0NzY1Mjc=";
