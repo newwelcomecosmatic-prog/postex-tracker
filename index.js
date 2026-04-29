@@ -26,5 +26,5 @@ app.get("/", (req, res) => {
   res.json({ status: "Server chal raha hai!" });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server port ${PORT} pe chal raha hai`));
